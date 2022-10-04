@@ -25,6 +25,7 @@ namespace Tema2_CuadrosTexto
             InitializeComponent();
             nombreTextBox.Tag = ayuda1TextBlock;
             apellidoTextBox.Tag = ayuda2TextBlock;
+
         }
 
         private void ayuda1(object sender, KeyEventArgs e)
@@ -49,11 +50,11 @@ namespace Tema2_CuadrosTexto
             {
                 if (int.TryParse((sender as TextBox).Text,out _))
                 {
-                    ayuda3TextBlock.Text = "";
+                    ayuda3TextBlock.Visibility = Visibility.Hidden;
                 }
                 else
                 {
-                    ayuda3TextBlock.Text = "Edad incorrecta";
+                    ayuda3TextBlock.Visibility = Visibility.Visible;
                 }
             }
         }

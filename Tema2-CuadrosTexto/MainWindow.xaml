@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="366" Width="444" Icon="Resources/icon.ico">
     <Grid>
-        <TextBox x:Name="nombreTextBox" HorizontalAlignment="Left" Height="23" Margin="53,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="apellidoTextBox" HorizontalAlignment="Left" Height="23" Margin="53,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="edadTextBox" HorizontalAlignment="Left" Height="23" Margin="53,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="ayuda1TextBlock" HorizontalAlignment="Left" Margin="232,73,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" Visibility="Hidden" KeyDown="ayuda1"/>
-        <TextBlock x:Name="ayuda2TextBlock" HorizontalAlignment="Left" Margin="232,169,0,58" TextWrapping="Wrap" Text="Apellido del cliente" Visibility="Hidden" KeyDown="ayuda1"/>
-        <TextBlock x:Name="ayuda3TextBlock" HorizontalAlignment="Left" Margin="242,261,0,31" TextWrapping="Wrap" Text="Edad incorrecta" Visibility="Hidden" KeyDown="ayuda2"/>
+        <TextBox x:Name="nombreTextBox" HorizontalAlignment="Left" Height="23" Margin="53,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  KeyDown="ayuda1"/>
+        <TextBox x:Name="apellidoTextBox" HorizontalAlignment="Left" Height="23" Margin="53,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="ayuda1"/>
+        <TextBox x:Name="edadTextBox" HorizontalAlignment="Left" Height="23" Margin="53,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="ayuda2"/>
+        <TextBlock x:Name="ayuda1TextBlock" HorizontalAlignment="Left" Margin="232,73,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBlock x:Name="ayuda2TextBlock" HorizontalAlignment="Left" Margin="232,169,0,58" TextWrapping="Wrap" Text="Apellido del cliente" Visibility="Hidden"/>
+        <TextBlock x:Name="ayuda3TextBlock" HorizontalAlignment="Left" Margin="242,261,0,31" TextWrapping="Wrap" Text="Edad incorrecta" Visibility="Hidden" />
         <TextBlock HorizontalAlignment="Left" Margin="53,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Nombre"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="53,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Apellidos"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="53,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="es-es" Text="Edad"/></TextBlock>
